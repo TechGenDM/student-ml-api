@@ -9,7 +9,7 @@ model = joblib.load("student_model.pkl")
 
 @app.route("/")
 def home():
-    return "ML API is running"
+    return render_template("index.html")
 
 
 @app.route("/form")
